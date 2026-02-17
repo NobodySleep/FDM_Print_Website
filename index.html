@@ -71,6 +71,9 @@
         <br><br>
     </p>
     <h2>Custom Print Tools</h2>
+    <br>
+</div>
+
     <div class="item">
     <img src="0.4nozzle.png" alt="0.4mm Nozzle">
     <p>
@@ -103,6 +106,7 @@
         available when searched online for it. Import this file as a custom filament.
     </p>
     </div>
+    <div class="paragraph_text">
     <h2>Slicer Settings</h2>
     <p>
         <br>
@@ -196,12 +200,17 @@
         Strategically, it is best to place the supports on smoother surfaces or areas that will be 
         less likely to be seen at the angle at which the finished print will be viewed. 
         In any case, whether a smooth print or not, it is best to post-process the print with sanding.
+        <br><br>
+        Always enable auto bed-leveling to ensure the build plate is detected properly. As well, doing
+        the full machine auto-calibration every two weeks to a month ensures that any shifts that occured
+        are corrected and prints are high quality. 
     </p>
     <h2>Post-Processing:</h2>
     <h2>Clean up the supports and rough edges</h2>
     <p>
+        <img src="Sanded.JPG" style="width: 50%;">
         <br>
-        Now that the print has manifested into reality, it needs a lot of cleanups. Typically, with these 
+        Now that the print has manifested into reality, it needs a lot of cleanup. Typically, with these 
         prints, a lot of plastic waste is created, so it is best to do the cleanup in a controlled environment.
         Keep track of the scraps and clean up as needed.
         <br><br>
@@ -213,13 +222,102 @@
         Once supports are off, a common trick to remove small hairs still on the print is to get a lighter 
         and burn them off. Bring the lighter about two inches away from the print. Act quickly and move the 
         lighter swiftly around the print to remove these hairs without igniting the whole print. 
-        <br><br>
+        </p> 
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+          <img
+            class="image-before slider-image"
+            src="Supported_Print.JPG"
+            alt="color photo"
+          />
+          <img
+            class="image-after slider-image"
+            src="Remove_Support.JPG"
+            alt="black and white"
+          />
+        </div>
+        <!-- step="10" -->
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          aria-label="Percentage of before photo shown"
+          class="slider"
+        />
+        <div class="slider-line" aria-hidden="true"></div>
+        <div class="slider-button" aria-hidden="true">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <line
+              x1="128"
+              y1="40"
+              x2="128"
+              y2="216"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <line
+              x1="96"
+              y1="128"
+              x2="16"
+              y2="128"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <polyline
+              points="48 160 16 128 48 96"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+            <line
+              x1="160"
+              y1="128"
+              x2="240"
+              y2="128"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <polyline
+              points="208 96 240 128 208 160"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+          </svg>
+        </div>
+      </div>
+  </div>
+    <div class ="paragraph_text">
+        <p>
         Sanding after is needed for removing harsh surfaces and cleaning detail. Use a gradual decrease 
         in sanding coarseness, smooth the edges until satisfied. I use a sanding block with various coarseness 
         and then finish with a glass nail file. This print came out pretty clean after removing supports, so 
         I minimally sanded it.
-    </p>
-
-    <script src="script.js"></script>
+        </p>
+   </div>
+<script src="script.js"></script>
 </body>
 </html> 

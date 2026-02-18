@@ -156,7 +156,8 @@ body.day-mode #problem_list {
 }
 body.day-mode h1,
 body.day-mode h2,
-body.day-mode li
+body.day-mode li,
+body.day-mode ul,
 body.day-mode a:link, body.day-mode a:visited {
   color: black;
 }

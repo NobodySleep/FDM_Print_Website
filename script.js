@@ -11,7 +11,14 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 
+const button = document.getElementById("problem_list");
+const text = document.querySelector(".button_text");
+  button.addEventListener("click", function() {
+    text.classList.add("show");
+    button.remove();
+});
+
 const container = document.querySelector('.container');
 document.querySelector('.slider').addEventListener('input', (e) => {
   container.style.setProperty('--position', `${e.target.value}%`);
-})
+});

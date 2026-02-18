@@ -175,6 +175,8 @@
     </p>
 
     <h2>Common Troubleshooting</h2>
+    <button id="problem_list">Show List</button>
+    <div class="paragraph_text button_text">
     <p>
         <br>
         Sometimes the print will fail due to several reasons; every printer and user will <br> experience 
@@ -203,12 +205,15 @@
         <br><br>
         Always enable auto bed-leveling to ensure the build plate is detected properly. As well, doing
         the full machine auto-calibration every two weeks to a month ensures that any shifts that occured
-        are corrected and prints are high quality. 
+        are corrected and prints are high quality. As well, lubing up the rails every month or so helps.
+        Every 6 months, I take apart the extruder gears and lube that as well.  
     </p>
+    </div>
+
     <h2>Post-Processing:</h2>
     <h2>Clean up the supports and rough edges</h2>
     <p>
-        <img src="Sanded.JPG" style="width: 50%;">
+        <img src="Sanded.JPG" style="width: 50%; min-width: 300px;">
         <br>
         Now that the print has manifested into reality, it needs a lot of cleanup. Typically, with these 
         prints, a lot of plastic waste is created, so it is best to do the cleanup in a controlled environment.
@@ -224,7 +229,7 @@
         lighter swiftly around the print to remove these hairs without igniting the whole print. 
         </p> 
     </div>
-
+    <a href="https://codepen.io/Coding-in-Public/pen/NWyjZwO" target="_blank">Credit to The Creator of This Slider</a>
     <div class="container">
         <div class="image-container">
           <img
@@ -238,7 +243,6 @@
             alt="black and white"
           />
         </div>
-        <!-- step="10" -->
         <input
           type="range"
           min="0"
@@ -249,67 +253,11 @@
         />
         <div class="slider-line" aria-hidden="true"></div>
         <div class="slider-button" aria-hidden="true">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            fill="currentColor"
-            viewBox="0 0 256 256"
-          >
             <rect width="256" height="256" fill="none"></rect>
-            <line
-              x1="128"
-              y1="40"
-              x2="128"
-              y2="216"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></line>
-            <line
-              x1="96"
-              y1="128"
-              x2="16"
-              y2="128"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></line>
-            <polyline
-              points="48 160 16 128 48 96"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></polyline>
-            <line
-              x1="160"
-              y1="128"
-              x2="240"
-              y2="128"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></line>
-            <polyline
-              points="208 96 240 128 208 160"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></polyline>
-          </svg>
         </div>
       </div>
   </div>
+
     <div class ="paragraph_text">
         <p>
         Sanding after is needed for removing harsh surfaces and cleaning detail. Use a gradual decrease 
@@ -317,6 +265,7 @@
         and then finish with a glass nail file. This print came out pretty clean after removing supports, so 
         I minimally sanded it.
         </p>
+        <img src="refine_tools.jpg" style="width: 30%">;
    </div>
 <script src="script.js"></script>
 </body>

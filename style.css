@@ -79,11 +79,13 @@ p {
 
 .button_text {
   overflow: hidden;
-  transition: max-height 1s ease, opacity 1.4s ease;
   opacity: 0;
+  max-height: 0;
+  transition: max-height 1s ease, opacity 1.4s ease;
 }
 .button_text.show {
   display: block;
+  transition: max-height 1s ease, opacity 1.4s ease;
   max-height: 1000px;
   opacity: 1;
 }
